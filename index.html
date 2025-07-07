@@ -32,29 +32,29 @@
     
     <script>
       
-      const redirectTimer = setTimeout(function() {
-        
-        window.location.href = "https://places.singleplatform.com/carolinas-cuban-cafe/menu";
-        
-      }, 6000);
-
+      let redirectTimer;
       
-      function cancelRedirect() {
+      function goRedirect() { window.location.href = "https://places.singleplatform.com/carolinas-cuban-cafe/menu"; }
+      
+      redirectTimer = setTimeout(goRedirect, 6000);
+      
+      function ex() {
         
         clearTimeout(redirectTimer);
-
-        window.removeEventListener("mousemove", cancelRedirect);
-        window.removeEventListener("scroll", cancelRedirect);
-        window.removeEventListener("click", cancelRedirect);
-      
+        
+        redirectTimer = setTimeout(goRedirect, 6000);
+        
+        window.removeEventListener("mousemove", ex);
+        window.removeEventListener("scroll", ex);
+        window.removeEventListener("click", ex);
+        
       }
       
-      window.addEventListener("mousemove", cancelRedirect);
-      window.addEventListener("scroll", cancelRedirect);
-      window.addEventListener("click", cancelRedirect);
+      window.addEventListener("mousemove", ex);
+      window.addEventListener("scroll", ex);
+      window.addEventListener("click", ex);
     
     </script>
-    
 
   </body>
   
