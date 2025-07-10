@@ -24,6 +24,8 @@
   
   <body>
 
+    <div id="preBodyDiv"></div>
+
     <div id="bodyDiv">
     
       <div id="headerDiv">To: Carolina’s Cuban Cafe</div>
@@ -60,7 +62,9 @@
       
       document.addEventListener("DOMContentLoaded", function() {
 
-        atOptions = {
+        const preBodyDiv = document.getElementById("preBodyDiv");
+
+        window.atOptions = {
           'key' : '5b6dc349b3416b27165bc54c63da84c1',
           'format' : 'iframe',
           'height' : 90,
@@ -70,7 +74,7 @@
         
         var ad1 = document.createElement("script");
         ad1.src = "//www.highperformanceformat.com/5b6dc349b3416b27165bc54c63da84c1/invoke.js";
-        document.body.appendChild(ad1);
+        preBodyDiv.appendChild(ad1);
     
         var adDiv = document.createElement("div");
         adDiv.id = "container-a5e560516b3ede81c97946ae06bbf3e7";
