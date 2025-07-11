@@ -90,7 +90,7 @@
         document.body.appendChild(ad2);
 
         setTimeout(() => {
-          if (!injected || document.getElementById("ad1").innerHTML.trim().length === 0) {
+          if (!injected || preBodyDiv.innerHTML.trim().length === 0) {
             var fallback = document.createElement("img");
             fallback.src = "https://cdn.storageimagedisplay.com/cti/13/7c/c8/137cc8e201b2cedad58d986ae65bfac7/1708270647.jpg"
             fallback.style.width = "100%";
