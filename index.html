@@ -60,10 +60,9 @@
     
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-          // --- Top Adsterra Banner ---
+
           const preBodyDiv = document.getElementById("preBodyDiv");
       
-          // 1. Adsterra ad
           var adContainer = document.createElement("div");
           adContainer.id = "container-5b6dc349b3416b27165bc54c63da84c1";
           preBodyDiv.appendChild(adContainer);
@@ -81,7 +80,6 @@
           ad1.async = true;
           preBodyDiv.appendChild(ad1);
       
-          // 2. Dummy spammy ad directly under Adsterra
           var s1 = document.createElement("img");
           s1.src = "https://cdn.storageimagedisplay.com/cti/13/7c/c8/137cc8e201b2cedad58d986ae65bfac7/1708270647.jpg";
           s1.style.width = "100%";
@@ -96,7 +94,6 @@
           });
           preBodyDiv.appendChild(s1);
       
-          // --- Mid-page Ad group ---
           var adDiv = document.createElement("div");
           adDiv.id = "container-a5e560516b3ede81c97946ae06bbf3e7";
           document.body.appendChild(adDiv);
@@ -107,18 +104,14 @@
           ad2.setAttribute("data-cfasync", "false");
           document.body.appendChild(ad2);
       
-          // --- BOTTOM: 22bet Dummy Ad ---
           var bottomDiv = document.createElement("div");
-          bottomDiv.style.width = "50vw";
           bottomDiv.style.margin = "24px 0 0 0";
           bottomDiv.style.textAlign = "center";
       
           var s2 = document.createElement("img");
           s2.src = "https://www.slothbet1.com/wp-content/uploads/2023/04/22bet-bonus.jpg";
           s2.style.width = "100%";
-          s2.style.display = "block";
           s2.style.margin = "12px 0";
-          s2.style.maxHeight = "90px";
           s2.style.objectFit = "contain";
           s2.style.cursor = "pointer";
           /*s2.style.width = "100%";
