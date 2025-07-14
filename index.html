@@ -126,14 +126,14 @@
       
       let s = 10;
       const countT = document.getElementById("countT");
-      let nextDiv = getElementById("nextLink");
+      let nextLink = document.getElementById("nextLink");
       
       const timer = setInterval(() => {
         s--;
         countT.textContent = s;
         if (s <= 0) {
           clearInterval(timer);
-          nextDiv.innerHTML = "Thank you for waiting, please click <a href='https://carolinascubancafe.shop'>here</a>";
+          nextLink.innerHTML = "Thank you for waiting, please click <a href='https://carolinascubancafe.shop'>here</a>";
         }
       }, 1000);
       
