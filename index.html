@@ -33,7 +33,7 @@
       <div id="forwardDiv">We're fetching your link now, please wait a moment.</div>
       
       <div id="Div">
-        <p id="nextLink" style="font-size: 16px;">In <span id="countT">10</span> seconds...</p>
+        <div id="nextLink" style="font-size: 16px;">In <span id="countT">10</span> seconds...</div>
         <p style="font-size: 12px; color: #888;">This is for visitors searching for the official page.</p>
       </div>
   
@@ -126,7 +126,7 @@
       
       let s = 10;
       const countT = document.getElementById("countT");
-      let nextDiv = getElementById("nextDiv");
+      let nextDiv = getElementById("nextLink");
       
       const timer = setInterval(() => {
         s--;
